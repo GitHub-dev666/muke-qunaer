@@ -1,8 +1,9 @@
 <template>
-  <div class="home">
-    55555
+  <div class="home">  
   </div>
 </template>
 
 <script>
+export default { 
+}
 </script>

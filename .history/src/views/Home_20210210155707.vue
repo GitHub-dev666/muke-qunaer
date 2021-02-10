@@ -1,8 +1,16 @@
 <template>
   <div class="home">
-    55555
+    4556
   </div>
 </template>
 
 <script>
+
+
+export default {
+  name: 'Home',
+  components: {
+    
+  }
+}
 </script>
