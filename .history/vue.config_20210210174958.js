@@ -18,7 +18,7 @@ module.exports = {
                       include: undefined,  // 如果设置了include，那将只有匹配到的文件才会被转换，例如只转换 'src/mobile' 下的文件 (include: /\/src\/mobile\//)
                       landscape: false, // 是否添加根据 landscapeWidth 生成的媒体查询条件 @media (orientation: landscape)
                       landscapeUnit: 'vw', // 横屏时使用的单位
-                      landscapeWidth: 568 // 横屏时使用的视口宽度
+                      landscapeWidth: 1334 // 横屏时使用的视口宽度
                   })
               ]
           }
