@@ -6,7 +6,7 @@
 
 <script>
 </script>
-<style scoped>
+<style lang="less" scoped>
   .box{
     width: 100px;
     height: 100px;
