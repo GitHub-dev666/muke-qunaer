@@ -13,8 +13,7 @@ export default {
 </script>
 <style lang="less" scoped>
 .home{
-  width: 750px;
-  height: 1334px;
+  width: 1000px;
   background-color: darkgrey;
 }
 </style>

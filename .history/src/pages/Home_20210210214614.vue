@@ -14,7 +14,6 @@ export default {
 <style lang="less" scoped>
 .home{
   width: 750px;
-  height: 1334px;
   background-color: darkgrey;
 }
 </style>
