@@ -57,6 +57,7 @@ export default {}
             width: 124px;
             height: 86px;
             line-height: 86px;
+            vertical-align: center;
             background-color: darksalmon;
             .middle()
         }
