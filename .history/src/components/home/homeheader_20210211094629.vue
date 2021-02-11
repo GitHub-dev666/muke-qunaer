@@ -1,16 +1,12 @@
 <template>
     <div class="wrap">
         <div class="left">
-           <span class="iconfont icon-jiantou"></span>
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-icon-jiantou"></use>
+            </svg>
         </div>
-        <div class="mid">
-           <span class="iconfont icon-search"></span>
-           <span>请输入城市</span>
-        </div>
-        <div class="right">
-           <span>城市</span>
-           <span class="iconfont icon-jiantouarrow486"></span>
-        </div>
+        <div class="mid">2</div>
+        <div class="right">3</div>
     </div>
 </template>
 <script src="../../assets/iconfont/iconfont.js"></script>
@@ -27,7 +23,6 @@ export default {}
         width: 1em;
         height: 1em;
         vertical-align: -0.15em;
-        fill: currentColor;
         overflow: hidden;
     }
     .wrap{
@@ -51,7 +46,6 @@ export default {}
             border-radius: 5px;
             margin: 12px 10px;
             vertical-align: center;
-            padding-left: 10px;
         }
         .right{
             width: 124px;

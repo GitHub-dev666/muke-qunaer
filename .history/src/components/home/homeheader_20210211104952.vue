@@ -5,10 +5,8 @@
         </div>
         <div class="mid">
            <span class="iconfont icon-search"></span>
-           <span>请输入城市</span>
         </div>
         <div class="right">
-           <span>城市</span>
            <span class="iconfont icon-jiantouarrow486"></span>
         </div>
     </div>
@@ -24,8 +22,8 @@ export default {}
         align-items: center;
     }
     .icon {
-        width: 1em;
-        height: 1em;
+        width: 5em;
+        height: 5em;
         vertical-align: -0.15em;
         fill: currentColor;
         overflow: hidden;
@@ -51,7 +49,6 @@ export default {}
             border-radius: 5px;
             margin: 12px 10px;
             vertical-align: center;
-            padding-left: 10px;
         }
         .right{
             width: 124px;

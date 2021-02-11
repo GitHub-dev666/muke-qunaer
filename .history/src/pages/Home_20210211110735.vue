@@ -7,6 +7,7 @@
 <script>
 import HomeHeader from '../components/home/homeheader'
 import HomeSwiper from '../components/home/homeswiper'
+import Homeswiper from '../components/home/homeswiper.vue'
 export default {
   components: {
     HomeHeader,

@@ -5,7 +5,6 @@
         </div>
         <div class="mid">
            <span class="iconfont icon-search"></span>
-           <span>请输入城市</span>
         </div>
         <div class="right">
            <span>城市</span>
@@ -51,7 +50,6 @@ export default {}
             border-radius: 5px;
             margin: 12px 10px;
             vertical-align: center;
-            padding-left: 10px;
         }
         .right{
             width: 124px;

@@ -51,7 +51,6 @@ export default {}
             border-radius: 5px;
             margin: 12px 10px;
             vertical-align: center;
-            padding-left: 10px;
         }
         .right{
             width: 124px;

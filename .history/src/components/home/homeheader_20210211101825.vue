@@ -1,20 +1,23 @@
 <template>
     <div class="wrap">
         <div class="left">
-           <span class="iconfont icon-jiantou"></span>
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-jiantou"></use>
+            </svg>
         </div>
-        <div class="mid">
-           <span class="iconfont icon-search"></span>
-           <span>请输入城市</span>
+        <div class="mid">2
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-search"></use>
+            </svg>
         </div>
-        <div class="right">
-           <span>城市</span>
-           <span class="iconfont icon-jiantouarrow486"></span>
+        <div class="right">3
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-jiantouarrow486"></use>
+            </svg>
         </div>
     </div>
 </template>
-<script src="../../assets/iconfont/iconfont.js"></script>
-<script>
+<script src="../../assets/iconfont/iconfont.js">
 export default {}
 </script>
 <style lang="less" scoped>
@@ -24,8 +27,8 @@ export default {}
         align-items: center;
     }
     .icon {
-        width: 1em;
-        height: 1em;
+        width: 5em;
+        height: 5em;
         vertical-align: -0.15em;
         fill: currentColor;
         overflow: hidden;
@@ -51,7 +54,6 @@ export default {}
             border-radius: 5px;
             margin: 12px 10px;
             vertical-align: center;
-            padding-left: 10px;
         }
         .right{
             width: 124px;
