@@ -29,7 +29,6 @@ export default {}
         }
         .mid{
             flex:1;
-            height: 62px;
             line-height: 62px;
             background-color: darkseagreen;
             border-radius: 5px;
