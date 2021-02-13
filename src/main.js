@@ -6,8 +6,16 @@ import './assets/iconfont/iconfont.css'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/swiper-bundle.css'
 
-Vue.use(VueAwesomeSwiper)
-
+Vue.use(VueAwesomeSwiper, {
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: true
+  },
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination'
+  }
+})
 Vue.config.productionTip = false
 
 new Vue({
