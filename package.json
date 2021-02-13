@@ -11,7 +11,7 @@
     "core-js": "^3.6.5",
     "swiper": "^6.4.11",
     "vue": "^2.6.11",
-    "vue-awesome-swiper": "^2.6.7",
+    "vue-awesome-swiper": "^4.1.1",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0"
   },
@@ -48,7 +48,7 @@
       "parser": "babel-eslint"
     },
     "rules": {
-      "no-irregular-whitespace":"off"
+      "no-irregular-whitespace": "off"
     }
   },
   "browserslist": [
