@@ -7,6 +7,7 @@
 <script>
 import HomeHeader from '../components/home/homeheader'
 import HomeSwiper from '../components/home/homeswiper'
+
 export default {
   components: {
     HomeHeader,

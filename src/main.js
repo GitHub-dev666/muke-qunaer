@@ -4,7 +4,7 @@ import router from './router'
 import store from './store'
 import './assets/iconfont/iconfont.css'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
-import 'swiper/swiper-bundle.css'
+import 'swiper/css/swiper.css'
 
 Vue.use(VueAwesomeSwiper)
 
