@@ -36,9 +36,23 @@ export default {
         {
           id: 1004,
           name: '冠豸山',
-          price: '￥ 3106',
+          price: '￥ 1190',
           script: '长沙韶山+张家界森林公园+玻璃桥+天门山+凤凰6日',
           imgUrl: '//imgs.qunarzz.com/p/tts7/1606/ac/7069afb127874f9a.jpg_r_480x320x95_96e926ad.jpg'
+        },
+        {
+          id: 1005,
+          name: '冠豸山',
+          price: '￥ 1590',
+          script: '琴之岛，乐之屿',
+          imgUrl: '//img1.qunarzz.com/sight/p0/1506/f6/f6b727f036fe5d6d.water.jpg_256x160_1175658b.jpg'
+        },
+        {
+          id: 1006,
+          name: '冠豸山',
+          price: '￥ 9500',
+          script: '滨海火山地貌',
+          imgUrl: '//img1.qunarzz.com/sight/p0/1810/7a/7aa0954b4ee9c932a3.img.jpg_256x160_8e6cd761.jpg'
         }
       ]
     }

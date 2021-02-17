@@ -39,6 +39,20 @@ export default {
           price: '￥ 3106',
           script: '含往返飞机票（含税）+4晚住宿',
           imgUrl: '//imgs.qunarzz.com/p/p22/1809/99/d2c37b3777d68102.jpg_256x160_3ffeabed.jpg'
+        },
+        {
+          id: 1005,
+          name: '冠豸山',
+          price: '￥ 1006',
+          script: '驾一叶扁舟，寻瓯江往事',
+          imgUrl: '//tr-osdcp.qunarzz.com/tr-osd-tr-manager/img/7d9b233c71cad13ded0013f9c9cec635.jpg'
+        },
+        {
+          id: 1006,
+          name: '冠豸山',
+          price: '￥ 3306',
+          script: '厦门，带娃出行与幸福同行',
+          imgUrl: '//tr-osdcp.qunarzz.com/tr-osd-tr-manager/img/5a11974656794b4715156501be10c1b7.jpg'
         }
       ]
     }

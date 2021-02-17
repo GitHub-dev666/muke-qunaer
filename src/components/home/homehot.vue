@@ -28,6 +28,10 @@ export default {
     justify-content: start;
     align-items: center;
     .link {
+        &.router-link-active{
+        background-color: #17c0c8;
+        color:#fff;
+        }
         width: 200px;
         height: 60px;
         line-height: 60px;
@@ -40,10 +44,6 @@ export default {
         border-radius: 12px;
         background-color: #fff;
         margin:12px 12px;
-        &.router-link-active{
-        background-color: #17c0c8;
-        color:#fff;
-    }
     }
 }
 </style>
