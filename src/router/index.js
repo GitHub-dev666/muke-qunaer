@@ -3,17 +3,23 @@ import VueRouter from 'vue-router'
 import Home from '../pages/Home.vue'
 import HomeHotChild from '../components/home/homehotchild.vue'
 import HomeHotChild2 from '../components/home/homehotchild 2.vue'
+import Order from '../pages/Order.vue'
+import Self from '../pages/Self.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
+    redirect: '/Home/homehotchild'
+  },
+  {
+    path: '/Home',
     name: 'Home',
     component: Home,
     children: [
       {
-        path: '/homehotchild',
+        path: '/Home/homehotchild',
         name: 'HomeHotChild',
         component: HomeHotChild
       },
@@ -23,6 +29,16 @@ const routes = [
         component: HomeHotChild2
       }
     ]
+  },
+  {
+    path: '/Order',
+    name: 'Order',
+    component: Order
+  },
+  {
+    path: '/Self',
+    name: 'Self',
+    component: Self
   }
 ]
 

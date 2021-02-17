@@ -1,20 +1,29 @@
 <template>
-  <div id="app">
-    <div>
+  <div class="wrap">
+    <div class="content">
       <router-view/>
     </div>
-    <div class="footer"></div>
+    <Footer></Footer>
   </div>
 </template>
+<script>
+import Footer from './components/footer'
+export default {
+  components: {
+    Footer
+  }
+}
+</script>
 
-<style lang="less">
-.app {
+<style lang="less" scope>
+.wrap {
   width: 750px;
-  height: 1334px;
-  .footer {
+  height: 1344px;
+  overflow: hidden;
+  .content{
     width: 100%;
-    height: 150px;
-    background-color: rgb(255, 127, 187);
+    height: 1244px;
+    overflow:scroll;
   }
 }
 </style>

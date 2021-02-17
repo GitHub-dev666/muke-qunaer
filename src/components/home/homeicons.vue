@@ -81,6 +81,7 @@ export default {
         }
         .icon-p {
           margin: 0px;
+          font-size: 28px;
           font-family: PingFangSC-Regula;
         }
     }

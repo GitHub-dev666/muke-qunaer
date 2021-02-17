@@ -23,41 +23,40 @@ export default {}
         justify-content: center;
         align-items: center;
     }
-    .icon {
-        width: 1em;
-        height: 1em;
-        vertical-align: -0.15em;
-        fill: currentColor;
-        overflow: hidden;
-    }
     .wrap{
         width: 750px;
         height: 86px;
+        font-size: 28px;
         background-color: #00bcd4;
         color: #ffff;
         display: flex;
         align-items: center;
+        .iconfont{
+            font-size: 28px;
+        }
         .left{
-            width: 64px;
+            width: 80px;
             height: 86px;
-            background-color: darkkhaki;
             .middle()
         }
         .mid{
             flex:1;
             height: 62px;
             line-height: 62px;
-            background-color: darkseagreen;
-            border-radius: 5px;
+            color: darkgray;
+            background-color: #fff;
+            border-radius: 12px;
             margin: 12px 10px;
             vertical-align: center;
             padding-left: 10px;
+            .icon-search {
+                margin: 0px 10px;
+            }
         }
         .right{
             width: 124px;
             height: 86px;
             line-height: 86px;
-            background-color: darksalmon;
             .middle()
         }
 
