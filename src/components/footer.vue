@@ -33,7 +33,7 @@
       color: #616161;
       text-decoration: none;
       &.router-link-active{
-        color: chocolate;
+        color: rgb(7, 181, 224);
       }
       .iconfont {
         font-size: 40px;
