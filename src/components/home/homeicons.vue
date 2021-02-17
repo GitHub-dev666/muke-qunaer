@@ -2,7 +2,7 @@
     <div class="icons">
         <div class='icon' v-for='item in iconList' :key='item.id'>
             <img class="icon-img" :src="item.imgUrl" :alt='item.name'>
-            <p>{{item.name}}</p>
+            <p class="icon-p">{{item.name}}</p>
         </div>
     </div>
 </template>
@@ -61,20 +61,28 @@ export default {
     overflow: hidden;
     width: 100%;
     height: 375px;
-
+    margin-top: 12px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
 
-    .icon{
+    .icon {
         width: 25%;
         height: 50%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        .icon-img{
+          display: block;
+          width: 55%;
+        }
+        .icon-p {
+          margin: 0px;
+          font-family: PingFangSC-Regula;
+        }
     }
 }
 </style>

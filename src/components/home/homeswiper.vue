@@ -53,10 +53,11 @@ export default {
   overflow: hidden;
   width: 100%;
   height: 0;
-  padding-bottom: 30%;
+  padding-bottom: 32%;
 }
 .swiper-img{
   width: 100%;
+  height: 240px;
 }
 .swiper-container{
   --swiper-pagination-color: #ffff;
