@@ -22,11 +22,11 @@ export default {
   },
   methods: {
     getInfo () {
-      axios.get('/#/public/mock')
+      axios.get('/api/test.json')
         .then(this.detilInfo)
     },
     detilInfo (res) {
-      console.log(res)
+      console.log(res.data)
     }
   },
   mounted () {
