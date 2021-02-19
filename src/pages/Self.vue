@@ -7,8 +7,6 @@
                 <p class="long-p">登录/注册</p>
             </div>
         </div>
-        <div></div>
-        <div></div>
     </div>
 </template>
 <style lang="less" scoped>
@@ -38,7 +36,6 @@
     margin: 0px;
     width: 100%;
     height: 88px;
-    padding-left: 30px;
     display: flex;
     justify-content: start;
     align-items:center;

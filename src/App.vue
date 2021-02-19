@@ -19,7 +19,6 @@ export default {
 .wrap {
   width: 750px;
   height: 1344px;
-  overflow: hidden;
   .content{
     width: 100%;
     height: 1244px;

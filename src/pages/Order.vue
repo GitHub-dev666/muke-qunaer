@@ -2,7 +2,7 @@
     <div class="wrap">
         <div class='header'>
             <p class="iconfont icon-jiantou"></p>
-            <p class="header-p2">全部订单</p>
+            <p>全部订单</p>
             <p class="header-p3">手机查单</p>
         </div>
         <div class='content'>
@@ -23,31 +23,36 @@
 .flex(){
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .wrap {
    background-color: rgb(237, 239, 242);
    .header  {
-       .flex();
-       .header-p2 {
-           margin: 0px 20px 0px 80px;
+       display: flex;
+       justify-content: start;
+       align-items: center;
+       .icon-jiantou {
+           margin-left:30px;
+           margin-right: 245px;
        }
        .header-p3 {
-           margin-right: 30px;
+           margin-left: 140px;
        }
-       .icon-jiantou {
-           margin-left: 40px
-       };
    }
-   .content-head {
-       .flex()
-   }
-    .content-mid {
+   .content {
+      .content-head {
+        .flex()
+      }
+      .content-mid {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items:center;
+        img {
+            width: 100%;
+        }
+      }
     }
-}
+   }
 </style>

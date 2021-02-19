@@ -39,7 +39,7 @@
         font-size: 40px;
       }
       .foot-sp{
-        margin-bottom: 12px;
+        margin-bottom: 2px;
       }
     }
 }

@@ -11,6 +11,7 @@ import HomeHeader from '../components/home/homeheader'
 import HomeSwiper from '../components/home/homeswiper'
 import HomeIcons from '../components/home/homeicons'
 import HomeHot from '../components/home/homehot'
+import axios from 'axios'
 
 export default {
   components: {
@@ -18,6 +19,18 @@ export default {
     HomeSwiper,
     HomeIcons,
     HomeHot
+  },
+  methods: {
+    getInfo () {
+      axios.get('/#/public/mock')
+        .then(this.detilInfo)
+    },
+    detilInfo (res) {
+      console.log(res)
+    }
+  },
+  mounted () {
+    this.getInfo()
   }
 }
 </script>
