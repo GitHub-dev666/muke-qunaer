@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <home-header></home-header>
-    <home-swiper></home-swiper>
+    <home-header :city="city"></home-header>
+    <home-swiper :list='swiperList'></home-swiper>
     <home-icons></home-icons>
     <home-hot></home-hot>
   </div>
@@ -14,6 +14,12 @@ import HomeHot from '../components/home/homehot'
 import axios from 'axios'
 
 export default {
+  data () {
+    return {
+      city: '',
+      swiperList: []
+    }
+  },
   components: {
     HomeHeader,
     HomeSwiper,
@@ -27,6 +33,9 @@ export default {
     },
     detilInfo (res) {
       console.log(res.data)
+      const data = res.data.data
+      this.city = data.city
+      this.swiperList = data.swiperList
     }
   },
   mounted () {

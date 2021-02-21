@@ -8,14 +8,20 @@
            <span>请输入城市</span>
         </div>
         <div class="right">
-           <span>城市</span>
-           <span class="iconfont icon-jiantouarrow486"></span>
+            <router-link class="city-link" :to="{name:'City'}">
+                <span>{{city}}</span>
+                <span class="iconfont icon-jiantouarrow486"></span>
+            </router-link>
         </div>
     </div>
 </template>
 <script src="../../assets/iconfont/iconfont.js"></script>
 <script>
-export default {}
+export default {
+    props: {
+        city:String
+    }
+}
 </script>
 <style lang="less" scoped>
     .middle(){
@@ -57,6 +63,10 @@ export default {}
             width: 124px;
             height: 86px;
             line-height: 86px;
+            .city-link {
+                text-decoration: none;
+                color:#fff;
+            }
             .middle()
         }
 

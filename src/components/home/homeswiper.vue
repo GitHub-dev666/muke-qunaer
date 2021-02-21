@@ -1,9 +1,9 @@
 <template>
-  <div class="swipers">
-      <div v-swiper:mySwiper="swiperOptions">
+  <div class="swipers" >
+      <div v-swiper:mySwiper="swiperOptions" v-if='this.list.length'>
       <div class="swiper-wrapper">
-        <div class="swiper-slide" :key="banner.id" v-for="banner in list">
-          <img class="swiper-img" :src="banner.imgUrl">
+        <div class="swiper-slide" :key="item.id" v-for="item in list">
+          <img class="swiper-img" :src="item.imgUrl">
         </div>
       </div>
       <div class="swiper-pagination"></div>
@@ -12,26 +12,11 @@
 </template>
 <script>
 export default {
+  props: {
+    list: Array
+  },
   data () {
     return {
-      list: [
-        {
-          id: 10001,
-          imgUrl: '//imgs.qunarzz.com/vs_ceph_vcimg/f03f5ac90ae59d0d9c6332a2bfd9782e.jpeg'
-        },
-        {
-          id: 1002,
-          imgUrl: '//imgs.qunarzz.com/vs_ceph_vcimg/569cae4ae98e9793f7341e85eed73c54.jpeg'
-        },
-        {
-          id: 1003,
-          imgUrl: '//imgs.qunarzz.com/vs_ceph_vcimg/f7813c9431796cc32ae7b7a78447342e.jpeg'
-        },
-        {
-          id: 1004,
-          imgUrl: '//imgs.qunarzz.com/vs_ceph_vcimg/6ff121fd416169b8d56c60384e3baf79.jpeg'
-        }
-      ],
       swiperOptions: {
         loop: true,
         effect: 'slide',
