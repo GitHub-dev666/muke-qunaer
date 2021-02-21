@@ -2,11 +2,15 @@
     <div class="wrap">
         <Header/>
         <Search/>
+        <now-city></now-city>
+        <hot-city></hot-city>
     </div>
 </template>
 <script>
 import Header from '../components/City/header'
 import Search from '../components/City/search'
+import NowCity from '../components/City/NowCity'
+import HotCity from '../components/City/HotCity'
 export default {
   data () {
     return {
@@ -14,7 +18,9 @@ export default {
   },
   components: {
     Header,
-    Search
+    Search,
+    NowCity,
+    HotCity
   }
 }
 </script>
