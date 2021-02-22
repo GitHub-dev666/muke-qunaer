@@ -17,9 +17,13 @@
 
 <style lang="less" scope>
 .footer {
+  background-color: #fff;
     width: 100%;
     height: 100px;
     border-top: 1px solid #e0e0e0;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;

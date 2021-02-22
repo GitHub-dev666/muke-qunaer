@@ -1,5 +1,5 @@
 <template>
-  <div class="wrap">
+  <div class="app">
     <div class="content">
       <router-view/>
     </div>
@@ -15,8 +15,8 @@ export default {
 }
 </script>
 
-<style lang="less" scope>
-.wrap {
+<style lang="less" scoped>
+.app {
   width: 750px;
   height: 1344px;
   .content{

@@ -21,6 +21,7 @@ export default {
     justify-content: center;
     align-content: center;
     .search {
+        font-size: 25px;
         text-align: center;
         width: 100%;
         border-radius: 10px;

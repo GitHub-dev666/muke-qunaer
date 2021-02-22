@@ -7,6 +7,8 @@
 .wrap {
     width: 100%;
     height: 50px;
+    font-size: 28px;
+    line-height: 50px;
     background: aquamarine;
     display: flex;
     justify-content: center;

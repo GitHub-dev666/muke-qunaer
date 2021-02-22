@@ -1,7 +1,7 @@
 {
 	"ret": true,
 	"data":{
-		"city": "北京",
+		"city": "福建",
 		"hotCities": [{
 			"id": 1,
 			"spell": "beijing",
