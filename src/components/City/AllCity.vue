@@ -1,15 +1,18 @@
 <template>
-    <div class="hot-wrap">
-        <div class="title" @click="sh">城市列表</div>
-        <div class="content" v-show="show">
-          <div class="citys" v-for='(value,key) in list' :key="key">
-            <div class="citytitle" v-text="key" @click="hh"></div>
-            <div class="cityvalue" v-for="item in value" :key="item.id" v-text="item.name" v-show="yyy"></div>
+  <div class="wrapper" ref="wrapper">
+    <div class="content">
+          <div class="title" @click="sh">城市列表</div>
+          <div class="content" v-show="show">
+            <div class="citys" v-for='(value,key) in list' :key="key">
+                <div class="citytitle" :ref="key" v-text="key" @click="hh"></div>
+                <div class="cityvalue" v-for="item in value" :key="item.id" v-text="item.name" v-show="yyy"></div>
+            </div>
           </div>
-        </div>
     </div>
+  </div>
 </template>
 <script>
+import Bscroll from 'better-scroll'
 export default {
   props: [
     'list'
@@ -17,7 +20,8 @@ export default {
   data () {
     return {
       show: 'true',
-      yyy: 'false'
+      yyy: 'false',
+      letter: ''
     }
   },
   methods: {
@@ -28,16 +32,28 @@ export default {
       this.yyy = !this.yyy
     },
     todo (res) {
-      console.log(res)
+      if (res) {
+        this.letter = res
+      }
     }
   },
   mounted () {
     this.$globalEventBus.$on('mess', this.todo)
+    this.scroll = new Bscroll(this.$refs.wrapper)
+  },
+  watch: {
+    letter () {
+      if (this.letter) {
+        const element = this.$refs[this.letter][0]
+        this.scroll.scrollToElement(element)
+        console.log(element)
+      }
+    }
   }
 }
 </script>
 <style lang="less" scoped>
-.hot-wrap {
+.content {
   font-size: 28px;
   line-height: 60px;
     .title {
