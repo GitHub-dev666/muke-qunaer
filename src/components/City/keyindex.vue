@@ -1,7 +1,7 @@
 <template>
     <div class="wrap">
         <ul class="ulwrap">
-            <li class="lilist" v-for="(item,key) in list" :key="key" v-text="key"></li>
+            <li class="lilist" @click="handle" v-for="(item,key) in list" :key="key" v-text="key"></li>
         </ul>
     </div>
 </template>
@@ -12,6 +12,11 @@ export default {
   ],
   data () {
     return {
+    }
+  },
+  methods: {
+    handle (e) {
+      this.$globalEventBus.$emit('mess', e.target.innerText)
     }
   }
 }
@@ -25,7 +30,7 @@ export default {
         list-style: none;
         position: absolute;
         right: 2px;
-        top: 150px;
+        top: 100px;
     }
 }
 </style>

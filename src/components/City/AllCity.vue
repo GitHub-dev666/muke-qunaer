@@ -26,7 +26,13 @@ export default {
     },
     hh () {
       this.yyy = !this.yyy
+    },
+    todo (res) {
+      console.log(res)
     }
+  },
+  mounted () {
+    this.$globalEventBus.$on('mess', this.todo)
   }
 }
 </script>
