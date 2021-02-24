@@ -1,7 +1,7 @@
 <template>
     <div class="wrap">
         <div class="header">
-            <p class="iconfont icon-jiantou"></p>
+            <p class="jiantou"></p>
             <div class="long">
                 <img class="long-img" src="https://source.qunarzz.com/usercenter/touch/avatar.png" alt="头像">
                 <p class="long-p">登录/注册</p>
@@ -40,7 +40,7 @@ export default {
         }
     }
 }
-.icon-jiantou {
+.jiantou {
     font-size: 34px;
     margin: 0px;
     width: 100%;

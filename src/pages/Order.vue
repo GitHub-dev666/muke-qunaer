@@ -36,7 +36,8 @@ export default {
     align-items: center;
 }
 .wrap {
-   background-color: rgb(237, 239, 242);
+    height: 93.5vh;
+    background-color: rgb(237, 239, 242);
    .header  {
        height: 70px;
        display: flex;

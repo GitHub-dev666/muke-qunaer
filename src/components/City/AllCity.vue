@@ -60,6 +60,7 @@ export default {
       .content {
         .citys {
           .citytitle {
+            font-size: 28px;
             height: 60px;
             line-height: 60px;
             box-sizing: border-box;
@@ -69,6 +70,7 @@ export default {
             background-color: rgb(182, 218, 230);
           }
           .cityvalue {
+            font-size: 28px;
             height: 60px;
             line-height: 60px;
             box-sizing: border-box;

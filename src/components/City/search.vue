@@ -16,7 +16,7 @@ export default {
 .wrap {
     width: 100%;
     height: 70px;
-    background-color:rgb(1,181,208);
+    background-color:#11C6CD;
     display: flex;
     justify-content: center;
     align-items: center;

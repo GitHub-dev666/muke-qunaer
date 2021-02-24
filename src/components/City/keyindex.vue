@@ -67,7 +67,7 @@ export default {
           line-height: 38px;
           text-align: center;
           list-style: none;
-          color:rgb(74, 183, 226);
+          color:#11C6CD;
         }
     }
 }

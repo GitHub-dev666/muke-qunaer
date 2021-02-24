@@ -11,6 +11,6 @@
     text-align: center;
     line-height: 50px;
     color: #fff;
-    background: rgb(1,181,208);
+    background: #11C6CD;
 }
 </style>
