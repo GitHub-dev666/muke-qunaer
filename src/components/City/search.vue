@@ -32,9 +32,6 @@ export default {
       }
       this.searchList = result
     }
-  },
-  mounted () {
-    console.log(this.list)
   }
 }
 </script>

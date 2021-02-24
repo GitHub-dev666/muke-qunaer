@@ -45,7 +45,6 @@ export default {
       const index = Math.floor((touchY - listTopY) / 19)
       if (index >= 0 && index < this.letter.length) {
         this.$globalEventBus.$emit('msg', this.letter[index])
-        console.log(this.letter[index])
       }
     },
     touchend () {

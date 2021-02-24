@@ -34,7 +34,6 @@ export default {
     },
     detil (req) {
       const data = req.data.data
-      console.log(data)
       this.nowCity = data.city
       this.hotcity = data.hotCities
       this.allcity = data.cities
