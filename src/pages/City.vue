@@ -1,7 +1,7 @@
 <template>
     <div class="wraper">
         <Header />
-        <Search />
+        <Search :list='allcity'/>
         <now-city :city='nowCity'></now-city>
         <hot-city :list='hotcity'></hot-city>
         <all-city :list='allcity'></all-city>

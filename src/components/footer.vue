@@ -17,11 +17,12 @@
 
 <style lang="less" scope>
 .footer {
-  background-color: #fff;
+    background-color: #fff;
     width: 100%;
     height: 6.5vh;
     border-top: 1px solid #e0e0e0;
     position: fixed;
+    z-index: 99;
     bottom: 0px;
     left: 0px;
     display: flex;
