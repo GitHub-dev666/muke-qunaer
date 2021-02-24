@@ -1,8 +1,16 @@
 <template>
     <div class="wrap">
-        <ul class="ulwrap">
-            <li class="lilist" @click="handle" v-for="(item,key) in list" :key="key" v-text="key"></li>
-        </ul>
+      <ul class="ulwrap" ref="A">
+          <li class="list"
+          @click="sendMsg"
+          v-for="(item,key) in list"
+          :key="key"
+          v-text="key"
+          @touchstart="touchstart"
+          @touchmove="touchmove"
+          @touchend="touchend"
+          ></li>
+      </ul>
     </div>
 </template>
 <script>
@@ -12,11 +20,36 @@ export default {
   ],
   data () {
     return {
+      touchStatus: false
+    }
+  },
+  computed: {
+    letter () {
+      const letter = []
+      for (const key in this.list) {
+        letter.push(key)
+      }
+      return letter
     }
   },
   methods: {
-    handle (e) {
-      this.$globalEventBus.$emit('mess', e.target.innerText)
+    sendMsg (e) {
+      this.$globalEventBus.$emit('msg', e.target.innerText)
+    },
+    touchstart () {
+      this.touchStatus = true
+    },
+    touchmove (e) {
+      const listTopY = this.$refs.A.offsetTop
+      const touchY = e.touches[0].clientY
+      const index = Math.floor((touchY - listTopY) / 19)
+      if (index >= 0 && index < this.letter.length) {
+        this.$globalEventBus.$emit('msg', this.letter[index])
+        console.log(this.letter[index])
+      }
+    },
+    touchend () {
+      this.touchStatus = false
     }
   }
 }
@@ -25,12 +58,17 @@ export default {
 .wrap {
     .ulwrap {
         font-size: 32px;
-        font-weight: bold;
-        color: rgb(36, 149, 241);
-        list-style: none;
         position: absolute;
-        right: 2px;
-        top: 100px;
+        top: 180px;
+        right: 0px;
+        .list {
+          width: 38px;
+          height: 38px;
+          line-height: 38px;
+          text-align: center;
+          list-style: none;
+          color:rgb(74, 183, 226);
+        }
     }
 }
 </style>

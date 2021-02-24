@@ -1,7 +1,7 @@
 <template>
     <div class="now-wrap">
-        <div class="title" @click="sh">当前城市</div>
-        <div class="content" v-show="show">
+        <div class="title">当前城市</div>
+        <div class="content">
           <div v-text="city"></div>
         </div>
     </div>
@@ -13,7 +13,6 @@ export default {
   ],
   data () {
     return {
-      show: 'true'
     }
   },
   methods: {
@@ -29,7 +28,7 @@ export default {
     .title {
         width: 100%;
         height: 50px;
-        background-color: rgb(216, 213, 213);
+        background-color: #ECECEC;
         box-sizing: border-box;
         padding: 3px 20px;
     }
@@ -42,7 +41,7 @@ export default {
         div {
           width: 120px;
           height: 60px;
-          background-color: rgba(201, 182, 182, 0.822);
+          background-color: #ECECEC;
           text-align: center;
           line-height: 60px;
           border-radius: 8px;

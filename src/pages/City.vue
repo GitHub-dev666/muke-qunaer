@@ -1,11 +1,12 @@
 <template>
     <div class="wraper">
         <Header />
-        <Search/>
+        <Search />
         <now-city :city='nowCity'></now-city>
         <hot-city :list='hotcity'></hot-city>
         <all-city :list='allcity'></all-city>
         <key-index :list='allcity'></key-index>
+        <Footer />
     </div>
 </template>
 <script>
@@ -15,6 +16,7 @@ import NowCity from '../components/City/NowCity'
 import HotCity from '../components/City/HotCity'
 import AllCity from '../components/City/AllCity'
 import keyIndex from '../components/City/keyindex'
+import Footer from '../components/footer'
 import axios from 'axios'
 
 export default {
@@ -47,9 +49,13 @@ export default {
     NowCity,
     HotCity,
     AllCity,
-    keyIndex
+    keyIndex,
+    Footer
   }
 }
 </script>
 <style lang="less" scoped>
+.wraper {
+  height: 93.5vh;
+}
 </style>

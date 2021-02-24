@@ -1,9 +1,12 @@
 <template>
-  <div class="home">
-    <home-header :city="city"></home-header>
-    <home-swiper :list='swiperList'></home-swiper>
-    <home-icons></home-icons>
-    <home-hot></home-hot>
+  <div class="wrap">
+    <div class="content">
+      <home-header :city="city"></home-header>
+      <home-swiper :list='swiperList'></home-swiper>
+      <home-icons></home-icons>
+      <home-hot></home-hot>
+    </div>
+    <Footer/>
   </div>
 </template>
 <script>
@@ -11,6 +14,7 @@ import HomeHeader from '../components/home/homeheader'
 import HomeSwiper from '../components/home/homeswiper'
 import HomeIcons from '../components/home/homeicons'
 import HomeHot from '../components/home/homehot'
+import Footer from '../components/footer'
 import axios from 'axios'
 
 export default {
@@ -24,7 +28,8 @@ export default {
     HomeHeader,
     HomeSwiper,
     HomeIcons,
-    HomeHot
+    HomeHot,
+    Footer
   },
   methods: {
     getInfo () {
@@ -44,8 +49,11 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-.home{
-  width: 750px;
-  height: 1334px;
+.wrap{
+  .content{
+    width: 100vw;
+    height: 93.5vh;
+    overflow: scroll;
+  }
 }
 </style>

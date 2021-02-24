@@ -7,8 +7,17 @@
                 <p class="long-p">登录/注册</p>
             </div>
         </div>
+        <Footer/>
     </div>
 </template>
+<script>
+import Footer from '../components/footer'
+export default {
+  components: {
+    Footer
+  }
+}
+</script>
 <style lang="less" scoped>
 .header {
     color: #fff;

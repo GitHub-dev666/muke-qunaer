@@ -19,7 +19,7 @@
 .footer {
   background-color: #fff;
     width: 100%;
-    height: 100px;
+    height: 6.5vh;
     border-top: 1px solid #e0e0e0;
     position: fixed;
     bottom: 0px;
@@ -33,7 +33,6 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      font-size: 24px;
       color: #616161;
       text-decoration: none;
       &.router-link-active{
@@ -43,6 +42,7 @@
         font-size: 40px;
       }
       .foot-sp{
+        font-size: 26px;
         margin-bottom: 2px;
       }
     }

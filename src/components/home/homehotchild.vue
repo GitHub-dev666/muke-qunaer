@@ -62,7 +62,6 @@ export default {
 <style lang="less" scoped>
 .wrap {
     width: 100%;
-    height: 668px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

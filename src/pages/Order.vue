@@ -17,8 +17,17 @@
                 <p>您还没有本地订单呦</p>
             </div>
         </div>
+        <Footer/>
     </div>
 </template>
+<script>
+import Footer from '../components/footer'
+export default {
+  components: {
+    Footer
+  }
+}
+</script>
 <style lang="less" scoped>
 .flex(){
     display: flex;

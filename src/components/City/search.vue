@@ -15,18 +15,18 @@ export default {
 <style lang="less" scoped>
 .wrap {
     width: 100%;
-    height: 50px;
-    background-color: aquamarine;
+    height: 70px;
+    background-color:rgb(1,181,208);
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     .search {
         font-size: 25px;
         text-align: center;
-        width: 100%;
+        width: 98%;
+        height: 80%;
         border-radius: 10px;
         border-style: none;
-        margin: 2px 10px;
         box-sizing: border-box;
         padding: 0px 8px;
     }

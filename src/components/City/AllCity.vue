@@ -1,89 +1,84 @@
 <template>
-  <div class="wrapper" ref="wrapper">
-    <div class="content">
-          <div class="title" @click="sh">城市列表</div>
-          <div class="content" v-show="show">
-            <div class="citys" v-for='(value,key) in list' :key="key">
-                <div class="citytitle" :ref="key" v-text="key" @click="hh"></div>
-                <div class="cityvalue" v-for="item in value" :key="item.id" v-text="item.name" v-show="yyy"></div>
-            </div>
-          </div>
+  <div class="wrap">
+    <div class="title">城市列表</div>
+    <div class="wraper" ref="wrap">
+      <div class="content">
+        <div class="citys" v-for='(value,key) in list' :key="key">
+          <div class="citytitle" v-text="key" :ref="key"></div>
+          <div class="cityvalue" v-for="item in value" :key="item.id" v-text="item.name"></div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 <script>
-import Bscroll from 'better-scroll'
+import BScroll from 'better-scroll'
 export default {
   props: [
     'list'
   ],
   data () {
     return {
-      show: 'true',
-      yyy: 'false',
-      letter: ''
     }
   },
   methods: {
-    sh () {
-      this.show = !this.show
-    },
-    hh () {
-      this.yyy = !this.yyy
-    },
     todo (res) {
       if (res) {
-        this.letter = res
+        const element = this.$refs[res][0]
+        this.scroll.scrollToElement(element)
       }
     }
   },
   mounted () {
-    this.$globalEventBus.$on('mess', this.todo)
-    this.scroll = new Bscroll(this.$refs.wrapper)
+    this.$globalEventBus.$on('msg', this.todo)
   },
-  watch: {
-    letter () {
-      if (this.letter) {
-        const element = this.$refs[this.letter][0]
-        this.scroll.scrollToElement(element)
-        console.log(element)
+  updated () {
+    this.$nextTick(() => {
+      this.scroll = new BScroll(this.$refs.wrap, {
+        click: true
       }
+      )
     }
+    )
   }
 }
 </script>
 <style lang="less" scoped>
-.content {
-  font-size: 28px;
-  line-height: 60px;
-    .title {
-        width: 100%;
-        height: 60px;
-        background-color: rgb(216, 213, 213);
-        box-sizing: border-box;
-        padding: 3px 20px;
-    }
-    .content {
-      width: 100%;
-      .citys {
-        background-color: darkgray;
-        .citytitle {
-          height: 60px;
-          box-sizing: border-box;
-          padding-left: 30px;
-          border-bottom: 1px solid;
-          border-color: lavender;
-          background-color: rgb(147, 202, 199);
-        }
-        .cityvalue {
-          height: 60px;
-          box-sizing: border-box;
-          padding-left: 30px;
-          background-color: rgb(237, 238, 233);
-          border-bottom: 1px solid;
-          border-color: rgb(184, 184, 192);
+.wrap{
+  .title {
+    font-size: 30px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color:#ECECEC;
+    box-sizing: border-box;
+    padding: 0px 20px;
+  }
+  .wraper {
+    height: 62vh;
+    overflow: hidden;
+      .content {
+        .citys {
+          .citytitle {
+            height: 60px;
+            line-height: 60px;
+            box-sizing: border-box;
+            padding-left: 30px;
+            border-bottom: 1px solid;
+            border-color: lavender;
+            background-color: rgb(182, 218, 230);
+          }
+          .cityvalue {
+            height: 60px;
+            line-height: 60px;
+            box-sizing: border-box;
+            padding-left: 15px;
+            background-color: rgb(255, 255, 255);
+            border-bottom: 1px solid;
+            border-color: rgb(237, 237, 238);
+          }
         }
       }
-    }
+  }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div class="hot-wrap">
-        <div class="title" @click="sh">热门城市</div>
-        <div class="content" v-show="show">
+        <div class="title">热门城市</div>
+        <div class="content">
           <div class="citys">
             <div class="city" v-for="item in list" :key="item.id">{{item.name}}</div>
           </div>
@@ -15,7 +15,6 @@ export default {
   ],
   data () {
     return {
-      show: 'true'
     }
   },
   methods: {
@@ -32,7 +31,7 @@ export default {
         width: 100%;
         height: 50px;
         line-height: 50px;
-        background-color: rgb(216, 213, 213);
+        background-color:#ECECEC;
         box-sizing: border-box;
         padding: 3px 20px;
     }
@@ -48,13 +47,13 @@ export default {
         align-content: space-around;
         .city {
           width: 28%;
-          height: 70px;
+          height: 60px;
           font-size: 28px;
-          background-color: rgb(124, 194, 216);
+          background-color: #ECECEC;
           box-sizing: border-box;
           border-radius: 10px;
           text-align: center;
-          line-height: 70px;
+          line-height: 60px;
         }
       }
     }

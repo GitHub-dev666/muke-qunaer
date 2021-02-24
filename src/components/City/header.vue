@@ -7,11 +7,10 @@
 .wrap {
     width: 100%;
     height: 50px;
-    font-size: 28px;
+    font-size: 34px;
+    text-align: center;
     line-height: 50px;
-    background: aquamarine;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: #fff;
+    background: rgb(1,181,208);
 }
 </style>
