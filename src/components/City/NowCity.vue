@@ -2,7 +2,7 @@
     <div class="now-wrap">
         <div class="title">当前城市</div>
         <div class="content">
-          <div v-text="city"></div>
+          <div @click="changCity" v-text="$store.state.city"></div>
         </div>
     </div>
 </template>
@@ -18,6 +18,9 @@ export default {
   methods: {
     sh () {
       this.show = !this.show
+    },
+    changCity () {
+      this.$router.push('/')
     }
   }
 }

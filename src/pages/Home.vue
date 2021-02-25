@@ -1,7 +1,7 @@
 <template>
   <div class="wrap">
     <div class="content">
-      <home-header :city="city"></home-header>
+      <home-header></home-header>
       <home-swiper :list='swiperList'></home-swiper>
       <home-icons></home-icons>
       <home-hot></home-hot>
@@ -37,7 +37,6 @@ export default {
         .then(this.detilInfo)
     },
     detilInfo (res) {
-      console.log(res.data)
       const data = res.data.data
       this.city = data.city
       this.swiperList = data.swiperList

@@ -5,7 +5,7 @@
       <div class="content">
         <div class="citys" v-for='(value,key) in list' :key="key">
           <div class="citytitle" v-text="key" :ref="key"></div>
-          <div class="cityvalue" v-for="item in value" :key="item.id" v-text="item.name"></div>
+          <div class="cityvalue" @click="changCity(item.name)" v-for="item in value" :key="item.id" v-text="item.name"></div>
         </div>
       </div>
     </div>
@@ -27,6 +27,10 @@ export default {
         const element = this.$refs[res][0]
         this.scroll.scrollToElement(element)
       }
+    },
+    changCity (i) {
+      this.$store.commit('changCity', i)
+      this.$router.push('/')
     }
   },
   mounted () {

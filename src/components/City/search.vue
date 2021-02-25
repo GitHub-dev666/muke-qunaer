@@ -3,7 +3,7 @@
         <input class="search" v-model="inputResult" type="text" name="search" :placeholder="def">
         <div class="searchResult" v-show="inputResult.length">
           <ul class="ul-wrap">
-            <li class="li-list" v-for="item in this.searchList" :key="item.id" v-text="item.name"></li>
+            <li class="li-list" @click="changCity(item.name)" v-for="item in this.searchList" :key="item.id" v-text="item.name"></li>
           </ul>
         </div>
     </div>
@@ -31,6 +31,12 @@ export default {
         })
       }
       this.searchList = result
+    }
+  },
+  methods: {
+    changCity (i) {
+      this.$store.commit('changCity', i)
+      this.$router.push('/')
     }
   }
 }

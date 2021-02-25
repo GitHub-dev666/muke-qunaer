@@ -3,7 +3,7 @@
         <div class="title">热门城市</div>
         <div class="content">
           <div class="citys">
-            <div class="city" v-for="item in list" :key="item.id">{{item.name}}</div>
+            <div class="city" @click="changCity(item.name)" v-for="item in list" :key="item.id">{{item.name}}</div>
           </div>
         </div>
     </div>
@@ -20,6 +20,10 @@ export default {
   methods: {
     sh () {
       this.show = !this.show
+    },
+    changCity (i) {
+      this.$store.commit('changCity', i)
+      this.$router.push('/')
     }
   }
 }

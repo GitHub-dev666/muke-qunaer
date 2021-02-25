@@ -9,7 +9,7 @@
         </div>
         <div class="right">
             <router-link class="city-link" :to="{name:'City'}">
-                <span>{{city}}</span>
+                <span>{{$store.state.city}}</span>
                 <span class="iconfont icon-jiantouarrow486"></span>
             </router-link>
         </div>
@@ -18,9 +18,6 @@
 <script src="../../assets/iconfont/iconfont.js"></script>
 <script>
 export default {
-    props: {
-        city:String
-    }
 }
 </script>
 <style lang="less" scoped>
