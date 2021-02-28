@@ -16,8 +16,6 @@ export default new Vuex.Store({
       localStorage.city = i
     },
     detailData (state, res) {
-      console.log(res.data.data.categoryList)
-      console.log(res.data.data.categoryList[0].children)
       state.detailData = res.data.data
       state.detailList = res.data.data.categoryList
     }

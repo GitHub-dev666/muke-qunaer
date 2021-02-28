@@ -29,6 +29,6 @@ export default {
 <style lang="less" scoped>
 .wrap {
   width: 100%;
-  height: 93.5vh;
+  height: 150vh;
 }
 </style>

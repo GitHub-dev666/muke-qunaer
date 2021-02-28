@@ -105,7 +105,7 @@ export default {
   .detail-head {
     width: 100%;
     height: 90px;
-    background-color:#fff;
+    background-color:rgb(128, 230, 230);
     position: fixed;
     left: 0px;
     top: 0px;
