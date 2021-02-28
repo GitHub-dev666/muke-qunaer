@@ -10,19 +10,20 @@
         </swiper>
       </div>
       <!--图片介绍-->
-      <div class="scripts">
-        <span>产品编号</span>
-        <span>132456586</span>
+      <div class="scripts" >
+        <span>产品编号</span><span>132456586</span>
       </div>
       <!--图片点击放大轮播图-->
-      <div class='pro-swiper' v-show="title" @click="SH">
-        <swiper  class="swiper-wrap" ref="mySwiper" :options="swiperOptions">
-          <swiper-slide class="content"  v-for="item in imgList" :key="item.id">
-            <img :src="item.imgUrl" alt="图片损坏">
-          </swiper-slide>
-          <div class="swiper-pagination" slot="pagination"></div>
-        </swiper>
-      </div>
+      <slow-show>
+        <div class='pro-swiper' v-show="title" @click="SH">
+          <swiper  class="swiper-wrap" ref="mySwiper" :options="swiperOptions">
+            <swiper-slide class="content"  v-for="item in imgList" :key="item.id">
+              <img :src="item.imgUrl" alt="图片损坏">
+            </swiper-slide>
+            <div class="swiper-pagination" slot="pagination"></div>
+          </swiper>
+        </div>
+      </slow-show>
       <!--顶部栏-->
       <div class="detail-head" :style="sty">
         <p>{{detailData.sightName}}</p>
@@ -31,7 +32,11 @@
 </template>
 <script>
 import { mapState } from 'vuex'
+import slowShow from '../anmation/slowshow'
 export default {
+  components: {
+    slowShow
+  },
   data () {
     return {
       sty: {
