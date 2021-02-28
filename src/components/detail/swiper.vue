@@ -25,11 +25,12 @@
       </div>
       <!--顶部栏-->
       <div class="detail-head" :style="sty">
-        <p>景点详情</p>
+        <p>{{detailData.sightName}}</p>
       </div>
     </div>
 </template>
 <script>
+import { mapState } from 'vuex'
 export default {
   data () {
     return {
@@ -87,7 +88,8 @@ export default {
   computed: {
     swiper () {
       return this.$refs.mySwiper.$swiper
-    }
+    },
+    ...mapState(['detailData'])
   }
 }
 </script>
