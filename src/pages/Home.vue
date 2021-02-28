@@ -20,8 +20,8 @@ import axios from 'axios'
 export default {
   data () {
     return {
-      city: '',
-      swiperList: []
+      swiperList: [],
+      lastCity: ''
     }
   },
   components: {
@@ -38,12 +38,18 @@ export default {
     },
     detilInfo (res) {
       const data = res.data.data
-      this.city = data.city
       this.swiperList = data.swiperList
     }
   },
   mounted () {
+    this.lastCity = this.$store.state.city
     this.getInfo()
+  },
+  activated () {
+    if (this.lastCity !== this.$store.state.city) {
+      this.lastCity = this.$store.state.city
+      this.getInfo()
+    }
   }
 }
 </script>

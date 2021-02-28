@@ -1,5 +1,5 @@
 <template>
-  <div class="swipers" >
+  <div class="swipers">
       <div v-swiper:mySwiper="swiperOptions" v-if='this.list.length'>
       <div class="swiper-wrapper">
         <div class="swiper-slide" :key="item.id" v-for="item in list">
@@ -20,13 +20,14 @@ export default {
       swiperOptions: {
         loop: true,
         effect: 'slide',
+        observer: true,
+        observeParents: true,
         autoplay: {
           delay: 3000,
           disableOnInteraction: false
         },
         pagination: {
-          el: '.swiper-pagination',
-          type: 'bullets'
+          el: '.swiper-pagination'
         }
       }
     }
@@ -39,6 +40,9 @@ export default {
   width: 100%;
   height: 0;
   padding-bottom: 32%;
+  .my-bullet {
+    color: blue;
+  }
 }
 .swiper-img{
   width: 100%;

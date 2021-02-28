@@ -6,6 +6,7 @@ import HomeHotChild2 from '../components/home/homehotchild 2.vue'
 import Order from '../pages/Order.vue'
 import Self from '../pages/Self.vue'
 import City from '../pages/City.vue'
+import Detail from '../pages/Detail.vue'
 
 Vue.use(VueRouter)
 
@@ -45,6 +46,11 @@ const routes = [
     path: '/city',
     name: 'City',
     component: City
+  },
+  {
+    path: '/detail',
+    name: 'detail',
+    component: Detail
   }
 ]
 

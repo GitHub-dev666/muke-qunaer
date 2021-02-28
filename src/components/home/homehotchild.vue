@@ -1,9 +1,11 @@
 <template>
     <div class="wrap">
         <div class="wrap-img" v-for="item in List" :key="item.id">
+          <router-link :to="{name:'detail'}" tag="div">
             <img :src='item.imgUrl' alt="图片损坏"/>
             <p class="wrap-script">{{item.script}}</p>
             <p class="wrap-price">{{item.price}}</p>
+          </router-link>
         </div>
     </div>
 </template>

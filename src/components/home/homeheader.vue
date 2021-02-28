@@ -38,7 +38,7 @@ export default {
             font-size: 28px;
         }
         .left{
-            width: 80px;
+            min-width: 80px;
             height: 86px;
             .middle()
         }
@@ -57,7 +57,7 @@ export default {
             }
         }
         .right{
-            width: 124px;
+            min-width: 124px;
             height: 86px;
             line-height: 86px;
             .city-link {
