@@ -1,0 +1,51 @@
+{
+  "id": "2372443",
+  "name": "去哪儿",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "19834156",
+      "name": "Icon_Filled_Home",
+      "font_class": "Icon_Filled_Home",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "19834160",
+      "name": "Icon_Filled_Study",
+      "font_class": "Icon_Filled_Study",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "19834162",
+      "name": "Icon_Filled_jiaoyan",
+      "font_class": "Icon_Filled_jiaoyan",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "608351",
+      "name": "箭头",
+      "font_class": "jiantouarrow486",
+      "unicode": "e6aa",
+      "unicode_decimal": 59050
+    },
+    {
+      "icon_id": "1115048",
+      "name": "箭头",
+      "font_class": "jiantou",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "19859568",
+      "name": "search",
+      "font_class": "search",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}

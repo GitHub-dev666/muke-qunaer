@@ -1,0 +1,100 @@
+{
+    "ret": true,
+    "data": {
+        "city": "福建",
+        "swiperList": [
+            {
+                "id": "10001",
+                "imgUrl": "http://imgs.qunarzz.com/vs_ceph_vcimg/f03f5ac90ae59d0d9c6332a2bfd9782e.jpeg"
+              },
+              {
+                "id": "1002",
+                "imgUrl": "http:////imgs.qunarzz.com/vs_ceph_vcimg/569cae4ae98e9793f7341e85eed73c54.jpeg"
+              },
+              {
+                "id": "1003",
+                "imgUrl": "http:////imgs.qunarzz.com/vs_ceph_vcimg/f7813c9431796cc32ae7b7a78447342e.jpeg"
+              },
+              {
+                "id": "1004",
+                "imgUrl": "http:////imgs.qunarzz.com/vs_ceph_vcimg/6ff121fd416169b8d56c60384e3baf79.jpeg"
+              }
+        ],
+        "hotList": [
+            {
+                "id": "1001",
+                "price": "￥ 5540",
+                "script": "含往返飞机票+6晚住宿",
+                "imgUrl": "http://imgs.qunarzz.com/p/p19/1809/b9/2a3d362aabcbb02.jpg_256x160_28907832.jpg"
+              },
+              {
+                "id": "1002",
+                "price": "￥ 8978",
+                "script": "含往返飞机票+5晚住宿",
+                "imgUrl": "http://imgs.qunarzz.com/p/p70/1809/e7/4941057a6aae702.jpg_256x160_9fee6ccb.jpg"
+              },
+              {
+                "id": "1003",
+                "price": "￥ 3344",
+                "script": "含往返飞机票+4晚住宿",
+                "imgUrl": "http://imgs.qunarzz.com/p/p67/1512/a2/0ebfcd965b9391f7.jpg_256x160_04d5813d.jpg"
+              },
+              {
+                "id": "1004",
+                "price": "￥ 5201",
+                "script": "含往返飞机票+3晚住宿",
+                "imgUrl": "http://imgs.qunarzz.com/p/p22/1809/99/d2c37b3777d68102.jpg_256x160_3ffeabed.jpg"
+              },
+              {
+                "id": "1005",
+                "price": "￥ 7456",
+                "script": "含往返飞机票+7晚住宿",
+                "imgUrl": "http://tr-osdcp.qunarzz.com/tr-osd-tr-manager/img/7d9b233c71cad13ded0013f9c9cec635.jpg"
+              },
+              {
+                "id": "1006",
+                "price": "￥ 1100",
+                "script": "含往返飞机票（含税）+4晚住宿",
+                "imgUrl": "http://tr-osdcp.qunarzz.com/tr-osd-tr-manager/img/5a11974656794b4715156501be10c1b7.jpg"
+              }
+        ],
+        "dailyList": [
+            {
+                "id": "1001",
+                "price": "￥ 1140",
+                "script": "云南全景🔥大理丽江西双版纳8日",
+                "imgUrl": "http://imgs.qunarzz.com/vs_ceph_b2c_001/12f9ee1a-2d94-44ed-9301-aeb668800662.gif"
+              },
+              {
+                "id": "1002",
+                "price": "￥ 2278",
+                "script": "泉州-张家界 6天跟团游",
+                "imgUrl": "http://imgs.qunarzz.com/p/tts4/1809/3a/0e53d6dfcba8ca02.jpg_r_480x320x95_900d539b.jpg"
+              },
+              {
+                "id": "1003",
+                "price": "￥ 3344",
+                "script": "泉州-南靖云水谣土楼群 7天跟团游",
+                "imgUrl": "http://imgs.qunarzz.com/p/tts4/1608/37/7638bcd52ed9502.jpg_r_480x320x95_1a24ccf5.jpg"
+              },
+              {
+                "id": "1004",
+                "price": "￥ 4201",
+                "script": "长沙韶山+张家界森林公园+玻璃桥+天门山+凤凰6日",
+                "imgUrl": "http://imgs.qunarzz.com/p/tts7/1606/ac/7069afb127874f9a.jpg_r_480x320x95_96e926ad.jpg"
+              },
+              {
+                "id": "1005",
+                "price": "￥ 7456",
+                "script": "琴之岛，乐之屿",
+                "imgUrl": "http://img1.qunarzz.com/sight/p0/1506/f6/f6b727f036fe5d6d.water.jpg_256x160_1175658b.jpg"
+              },
+              {
+                "id": "1006",
+                "price": "￥ 9100",
+                "script": "滨海火山地貌",
+                "imgUrl": "http://img1.qunarzz.com/sight/p0/1810/7a/7aa0954b4ee9c932a3.img.jpg_256x160_8e6cd761.jpg"
+              }
+        ]
+    }
+}
